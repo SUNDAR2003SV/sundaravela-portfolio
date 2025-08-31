@@ -1,4 +1,4 @@
-/* Base and Reset */
+/* Base and Reset *//* Base and Reset */
 body {
   font-family: 'Inter', Arial, sans-serif;
   margin: 0;
@@ -12,7 +12,7 @@ body {
 header {
   background: #007bff;
   color: white;
-  padding: 15px 25px;
+  padding: 20px 25px; /* uniform padding */
 }
 
 .header-container {
@@ -67,7 +67,7 @@ header {
 
 /* SECTIONS */
 section {
-  padding: 18px 25px;
+  padding: 20px 25px; /* uniform padding */
   max-width: 900px;
   margin: 30px auto;
   background: white;
@@ -103,7 +103,7 @@ h3 {
 /* Lists */
 ul {
   list-style: none;
-  padding-left: 0;
+  padding-left: 20px; /* consistent bullets */
 }
 
 ul li {
@@ -115,7 +115,7 @@ ul li {
 /* PROJECTS */
 .project {
   background: #f1f1f1;
-  padding: 15px 20px;
+  padding: 20px 20px; /* uniform padding */
   margin-bottom: 15px;
   border-radius: 6px;
   transition: box-shadow 0.2s ease, transform 0.2s ease;
@@ -132,7 +132,7 @@ ul li {
 }
 
 .project-features {
-  margin: 10px 0 15px 20px;
+  margin: 12px 0 18px 20px;
   padding-left: 0;
   list-style-type: disc;
   color: #555;
@@ -146,14 +146,14 @@ ul li {
 /* CV DOWNLOAD BUTTON */
 .cv-btn {
   display: inline-block;
-  padding: 12px 20px;
+  padding: 14px 24px;
   background: #007bff;
   color: white;
   border-radius: 6px;
   font-weight: bold;
   text-decoration: none;
   transition: background 0.3s ease;
-  margin: 15px 25px 50px;
+  margin: 20px 25px 50px;
 }
 
 .cv-btn:hover {
@@ -172,7 +172,7 @@ ul li {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #ddd;
-  padding: 10px 0;
+  padding: 12px 0; /* slightly more vertical padding */
 }
 
 .edu-left {
@@ -192,8 +192,8 @@ ul li {
 
 /* SKILLS SECTION */
 .skills-section {
-  padding: 18px 25px;
-  max-width: 900px;
+  padding: 20px 48px;
+  max-width: 850px;
   margin: 30px auto;
   background: white;
   border-radius: 8px;
@@ -203,15 +203,15 @@ ul li {
 .skills-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 15px;
   justify-content: flex-start;
 }
 
 .skill-category {
-  flex: 1 1 200px;
+  flex: 1 1 180px;
   background: #fafafa;
   border-radius: 7px;
-  padding: 12px 16px;
+  padding: 10px 15px;
   box-shadow: 0 1.5px 6px rgba(0,0,0,0.08);
   transition: box-shadow 0.25s ease;
 }
@@ -221,26 +221,27 @@ ul li {
 }
 
 .skill-category h4 {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   color: #007bff;
   font-weight: 600;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
 }
 
 .skill-category ul {
   padding-left: 20px;
   margin: 0;
   color: #333;
+  list-style-type: disc;
 }
 
 .skill-category ul li {
-  font-size: 0.95rem;
-  margin-bottom: 6px;
+  font-size: 0.85rem;
+  margin-bottom: 5px;
 }
 
 /* TOOLS SECTION */
 .tools-section {
-  padding: 18px 25px;
+  padding: 20px 25px;
   max-width: 900px;
   margin: 30px auto;
   background: white;
@@ -256,8 +257,8 @@ ul li {
 }
 
 .tool {
-  background-color: #e3f2fd; /* very light blue pastel */
-  color: #0d47a1; /* dark blue text */
+  background-color: #e3f2fd;
+  color: #0d47a1;
   padding: 8px 14px;
   border-radius: 18px;
   font-size: 0.95rem;
@@ -269,7 +270,7 @@ ul li {
 }
 
 .tool:hover {
-  background-color: #bbdefb; /* slightly darker light blue */
+  background-color: #bbdefb;
   color: #073763;
 }
 
@@ -296,29 +297,37 @@ footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 15px;
   }
-  
+
   .edu-left, .edu-right {
     max-width: 100%;
     text-align: center;
     display: block;
+    margin-bottom: 8px;
   }
 
   .skills-container, .tools-list {
     justify-content: center;
   }
 }
+
+/* Horizontal Rule */
 hr {
   border: none;
   border-top: 1.5px solid #ddd;
   margin: 25px 0;
 }
+
+/* Focus Outlines */
 .project a:focus,
 .header-text .contact a:focus,
 .cv-btn:focus {
   outline: 3px solid #0056b3;
   outline-offset: 2px;
 }
+
+/* Email copy hover */
 .copy-email {
   cursor: pointer;
   color: yellow;
@@ -326,10 +335,14 @@ hr {
 .copy-email:hover {
   text-decoration: underline;
 }
+
+/* Project hover effect */
 .project:hover {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   transform: translateY(-3px);
 }
+
+/* Bullet list styling */
 .bullet-list {
   list-style-type: disc;
   padding-left: 20px;
@@ -337,4 +350,5 @@ hr {
   color: #444;
   font-size: 1rem;
 }
+
 

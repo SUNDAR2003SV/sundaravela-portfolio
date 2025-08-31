@@ -350,5 +350,44 @@ hr {
   color: #444;
   font-size: 1rem;
 }
+/* CV Download Button */
+.btn {
+  display: inline-block;
+  padding: 14px 28px;           /* Size of button */
+  background-color: #007BFF;    /* Professional blue color */
+  color: #fff;                  /* White text */
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;        /* Remove underline */
+  border-radius: 8px;           /* Rounded corners */
+  border: 2px solid transparent;
+  transition: all 0.3s ease;    /* Smooth hover effect */
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;    /* Darker blue on hover */
+  border: 2px solid #007BFF;    /* Optional subtle border */
+  color: #fff;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #111;        /* Dark background for professionalism */
+  color: #fff;                   /* White text */
+  text-align: center;            /* Centered content */
+  padding: 15px 0;               /* Top & bottom padding */
+  font-size: 0.9rem;             /* Slightly smaller text */
+  letter-spacing: 0.5px;         /* Clean spacing */
+}
+
+footer p {
+  margin: 0;                     /* Remove default margin */
+}
+/* CV Button Enhancement */
+.cv-btn { 
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3); /* Subtle shadow */
+}
+
 
 
